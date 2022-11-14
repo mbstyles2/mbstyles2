@@ -1,0 +1,809 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body,.main{
+ /*background-image:url('omo.webp')!important;*/
+  background-color: #060244!important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.main{
+  align-items: center;
+}
+
+.row{
+  margin: 0 10px;
+}
+
+.horiz{
+  position: relative;
+  left: 2px;
+}
+
+  .bx,.cx{
+  width: 100%;
+  display: flex; 
+  }
+  
+  .box{width:100%;
+  }
+  
+  .box p{
+  
+  top: 95%;}
+  
+#container {
+  width: 98vw;
+  height: 90vh;
+  border: 2px solid black;
+  /*Making the container a flexbox*/
+  display: flex;
+  /*Making equal spaced divs*/
+  /* justify-content: space-between; */
+  margin: 0 10px 10px;
+  background-color: black;
+}
+.ball{
+  box-shadow: 5px  4px  5px  4px teal;
+  width: 80%;
+  display:flexbox;
+  font-family: 'Courier New', monospace;
+  padding-left: 0px;
+  
+  
+}
+
+.section{
+  position: relative;
+  left: 180px;
+  
+}
+.row:hover{
+  border: solid teal 3px;
+
+}
+
+.row a{
+  text-decoration: none;
+
+}
+
+.one:hover{
+  transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+-ms-transform: scale(1.2);
+}
+
+.one{ 
+  width: 40%;
+  height: 75%;
+   background-image: url('/images/nin.png');
+  
+   color: white;
+    
+    padding: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: .3s ease-out;
+    /* margin: 0 12px 12px; */
+    background-size: cover;
+      height: 60vh;
+    font-family: 'Courier New', monospace; 
+    font-size: 1.5rem;
+    border: 4px solid black;
+    
+}
+
+.one p,.two p,.three p,.four p,.five p, .six p{color: aliceblue;
+      text-align: center;
+      position: relative;
+      top: 105%;
+      left: 2%;
+      
+/* transform: translate(-50%, -50%);} */}
+
+.box a{
+  text-decoration: none;
+}
+
+.col-12{
+  background-color: red;
+  padding: 10px;
+  
+}
+
+.two{
+  width: 40%;
+  height: 75%;
+    background-image: url('/images/gp.jpg');
+    
+    
+    background-color:black;
+    color: white;
+    padding: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: .3s ease-out;
+    
+    background-size: cover;
+      height: 60vh;
+    font-family: 'Courier New', monospace; 
+    font-size: 1.5rem;
+    border: 4px solid black;
+}
+
+.three:hover{
+  background-color: blue;
+  transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+-ms-transform: scale(1.2);
+}
+
+.four:hover,.five:hover{
+  background-color: teal;
+  transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+-ms-transform: scale(1.2);
+}
+.two:hover, .six:hover{
+  background-color: turquoise;
+  transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+-ms-transform: scale(1.2);
+}
+
+.three{
+  width: 40%;
+  height: 75%;
+    background-color: black;
+    background-image: url('/images/images.png');
+    background-color:black;
+    color: white;
+    padding: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: .3s ease-out;
+    background-size: cover;
+    height: 60vh;
+    font-family: 'Courier New', monospace; 
+    font-size: 1.5rem;
+    border: 4px solid black;
+   
+}
+
+.offcanvas{
+  background-color: #060244;
+  padding: 10px;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: calc(200px);
+  transition: .3s ease-out;
+  margin: 0 12px 12px;
+  color: white;
+  
+}
+
+.four{
+  width: 40%;
+  height: 75%;
+  background-color: black;
+  background-image: url('/images/naru.jpg');
+  color: white;
+  padding: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: .3s ease-out;
+  /* margin: 0 12px 12px; */
+  background-size: cover;
+    height: 60vh;
+  font-family: 'Courier New', monospace; 
+  font-size: 1.5rem;
+  border: 4px solid black;
+
+}
+
+
+.five{
+  width: 40%;
+  height: 75%;
+  
+  background-color: black;
+  color: white;
+  padding: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: .3s ease-out;
+  /* margin: 0 12px 12px; */
+  background-size: cover;
+    height: 60vh;
+  font-family: 'Courier New', monospace; 
+  font-size: 1.5rem;
+  border: 4px solid black;
+  background-image: url('/images/fire.jpg');
+ 
+}
+
+
+
+.six {
+  width: 40%;
+  height: 75%;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: .3s ease-out;
+  /* margin: 0 12px 12px; */
+  background-size: cover;
+    height: 60vh;
+  font-family: 'Courier New', monospace; 
+  font-size: 1.5rem;
+  border: 4px solid black;
+  background-image: url('/images/codm.png');
+}
+
+
+.fa-plus {
+  margin-left: 400px;
+}
+
+.fa-search {
+  color: white;
+}
+
+
+.fa-linkedin{
+  color: white;
+  background-color:rgba(34, 32, 184, 0.5);
+}
+
+.fa-plus:hover{
+  color: red;
+}
+.fa-search:hover{
+  color: white;
+}
+
+.read{
+  color: red;
+  background-color: transparent;
+  border: 3px solid white;
+  border-radius: 18px;
+  padding: 10px;
+}
+
+.container-fluid a:hover{
+  color: red;
+  
+}
+
+.container-fluid h2:hover{
+  color: red!important;
+  
+}
+
+.container-fluid{
+  position: relative;
+  background-image: url('/images/playstation-5-logo.jpg');
+  /* max-height: 50%; */
+  /* background-repeat: no-repeat; */
+  background-position: center;
+  background-size: cover;
+    width: 100%;
+    height: auto;
+    display: fixed;
+    
+  text-align: center;
+  font-family:  'Courier New', monospace;
+}
+
+.container-one{
+  background-image: url('/images/ps2-logo-icon-20.jpg');
+  /* max-height: 50%; */
+  /* background-repeat: no-repeat; */
+  background-position: center;
+  background-size: cover;
+    width: 100%;
+    height: 80vh;
+    display: fixed;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.container-fluid a, .container-one a{text-decoration: none;}
+
+
+.all-news{
+  background-color: rgb(66, 64, 64);
+  margin: 20px;
+  margin-left: 400px;
+  width: 40%;
+  height: 7vh;
+  text-align: center;
+  color: aliceblue;
+  font-size: 16px;
+  font-family: cursive;
+  padding: 10px;
+  
+}
+.icon{
+    display: none;
+}
+
+.navbar{
+    background-color: black;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.navbar .fa{
+  color: red;
+}
+.navbar .fa:hover{
+  color: white;
+}
+
+.navbar img{
+  margin-left: 50px;
+}
+
+.menu a {
+    float: none;
+    /* display: block; */
+    color: #f2f2f2;
+    text-align: center;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 25px;
+    margin-left: 10px;
+    font-family:cursive;
+  }
+  
+  /* Change the color of links on hover */
+  .menu a:hover {
+    background-color: red;
+    color: black;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .menu a.active {
+    background-color: transparent;
+    color: white;
+  }
+
+
+.menu{
+    /* float: left; */
+    margin-right: 100px;
+}
+
+.dropdown-menu {
+  z-index: 1;
+  width: 70%;
+  
+}
+
+.comment{
+  padding: 20px;
+  height: 80px;
+}
+
+
+.colla{
+  background-color: rgb(51, 48, 48);
+  color: aliceblue;
+  cursor: pointer;
+  padding: 11px;
+  border: none;
+  text-align: left;
+
+}
+
+.all-news:hover{
+  background-color: red;
+  cursor: pointer;
+}
+
+.active, .colla:hover{
+  background-image: linear-gradient(rgb(129, 101, 230),rgb(3, 4, 75));
+  
+}
+
+
+
+.carousel-item img{margin-left: 360px;}
+
+.carousel-item h3,p{color: mintcream;
+
+font-family: 'Courier New', monospace;
+}
+
+.carousel{
+  margin: 23px;
+  height: 71vh;
+  /* background-color: rgb(43, 41, 40); */
+  box-shadow: 5px 5px 5px 7px lightblue;
+  width: 70%;
+  margin-left: 180px;
+}
+
+
+.rev{
+  background-color: #3B5998;
+  width: 9%;
+  padding: 5px;
+  
+  
+}
+
+.content{
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  color: azure;
+
+}
+
+.card{
+  width: 40%;
+  height: 30vh;
+  
+  color: black;
+  box-shadow: 10px rgb(12, 10, 10);
+  text-align: center;
+ 
+  padding: 20px;
+  margin: 30px;
+  margin-left: 400px;
+  font-family: 'Courier New', Courier, monospace;}
+
+fa-book {margin-left: 230px;}
+
+footer{
+  background-color: rgb(12, 10, 10);
+  color: antiquewhite;
+  padding: 20px;
+  font-family: 'Courier New', monospace;
+  text-align:center;
+  
+}
+
+.fa{
+  padding: 10px;
+  font-size: 30px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+}
+ 
+.fa:hover{
+   opacity: 0.8;
+ }
+ 
+.fa-facebook{
+   background: #3B5998;
+   color: white;
+ 
+ }
+ 
+ 
+.fa-twitter{
+    background: #55ACEE;
+    color: blanchedalmond;
+ }
+ 
+.fa-whatsapp{
+  background: green;
+ }
+ 
+.fa-youtube{
+   background-color: red;
+   color: white;}
+
+   .fa-google{
+    background-color: red;
+    color: white;}
+
+.social-media{
+  text-align: center;
+}
+.holder{
+  display: flexbox;
+text-align:center;
+  font-size:13px;
+  
+}
+
+.holder a{
+  text-decoration: none;
+  color: white;
+  padding: 12px;
+}
+
+.holder a:hover{
+ /* border-radius: 5px solid yellow; */
+  color: red;
+  
+}
+
+.foot{
+  text-align: center;
+ padding: 20px;
+}
+
+#talk{
+  position: relative;
+  left: -29px
+}
+
+.ahead{
+  color: white;
+  width: 90%;
+}
+
+.aside{
+  width: 100%;
+  height: 540px;
+  width: 540px;
+  background-image: linear-gradient(lavender,teal, lavender) ;
+  /* background-color: rgb(202, 40, 40); */
+  border-radius: 50%;
+  display: inline-block;
+  padding: 10px;
+  margin-left: 404px;
+  font-family:cursive;
+  text-align: center;
+}
+
+.aside:hover{
+  background-color: red;
+}
+
+form{
+  margin-left: 5px;
+  margin-top: 50px;
+  
+}
+
+
+.vel{
+  margin-top: 40px;
+}
+.btn-success{
+  
+  padding: 12px;
+}
+
+form p{padding-left: 62px;}
+
+input[type=text], input[type=tel]{
+  padding: 10px;
+  margin: 10px;
+}
+
+.scrollFade {
+  opacity: 1;
+  pointer-events: all;
+}
+.scrollFade--hidden {
+  opacity: 0.4;
+  pointer-events: none;
+}
+.scrollFade--visible {
+  opacity: 1;
+  pointer-events: all;
+}
+.scrollFade--animate {
+  transition: opacity 0.4s ease-in-out;
+}
+
+
+
+/* media Queries */
+
+
+
+
+
+@media screen and (max-width: 600px) {  .navbar img{
+  margin-left: 0px;
+}}
+@media screen and (max-width: 400px) {  .navbar img{
+  margin-left: 0px;
+}
+.aside,.holder{
+  margin-right:10px;
+  margin-top: 20px;
+}
+.btn-success{
+  padding:5px;
+  left:-50px;
+  position: relative;
+  }
+  .carousel{
+    height: 50vh;
+  }
+
+}
+@media screen and (max-width: 798px) and (min-width:300px){
+    .navbar a:not(:first-child) {display: none;}
+    .navbar a.icon {
+    float: none;
+    display: block;
+    }
+    .icon{
+      display: block;
+      align-items: center;
+      text-align: right;
+  }
+
+  .row{
+    display: grid;
+  }
+  
+  footer{width:100%}
+
+  .carousel{
+    margin: 20px;
+    height: 80vh;
+    padding: 10px;
+    margin-left: 5px;
+    width: 93%;
+  }
+  .main{
+    width: 95%;
+    text-align: center;
+    margin-left: 1px;
+  }
+  .all-news{
+    margin: 5px;
+    margin-left: 50px;
+    height:11vh;
+  }
+  .dropend, .dropstart{
+    margin-left: 265px;
+  }
+  .holder{
+    margin-left: -1px;
+  }
+  .fa-plus{
+    margin-left: 170px;
+  }
+  
+  .aside{
+  width: 100%;
+  width:340px;
+  height: 340px;
+  border-radius: 50%;
+  display: inline-block;
+  padding: 10px;
+  margin-left: 10px;
+  }
+  
+  .navbar{width:105%; padding:10px}
+  
+  .ball{margin:50px}
+  
+  .aside button{margin-left: 110px;}
+  
+  form{
+  margin-left: 15px;
+  margin-top: -55px;
+  }
+  
+  input[type=text],input[type=tel]{
+  padding:5px;
+  margin : 5px;
+  }
+  .btn-success{
+  padding:5px;
+  left:-51px;
+  position: relative;
+  }
+  
+ .card{
+  margin: 10px;
+  margin-left: 20px;
+  display: flex;
+  width:90%;
+  height: 45vh;
+ }
+  
+  .card fa-book{
+  margin-left:100px;
+  }
+  .navbar img{
+    margin-left: 5px;
+  }
+  .container-fluid{
+    background-size: calc(800px);
+    background-repeat: no-repeat;
+  }
+  .carousel-item img{margin-left: 0px;
+  width: 100%;}
+  /*.social-media{
+   margin-left: 150px;
+  }*/
+  .ball{
+  left:  50px;
+  }
+  .container-fluid{
+  
+  
+  left: 10px;
+  background-image: url('/images/playstation-5-logo.jpg');
+  /* max-height: 50%; */
+  /* background-repeat: no-repeat; */
+  background-position: center;
+  background-size: contain;
+  width: 100%;
+  height: 80vh;
+  text-align: center;
+  font-family: 'Courier New', monospace;
+  }
+  #container {
+  width: 100%;
+  height: auto;
+  border: 2px solid black;
+  /*Making the container a flexbox*/
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  margin: 10 px;
+  /*Making equal spaced divs*/
+  /* justify-content: space-between; */
+  
+  background-color: black;
+  }
+  .bx,.cx{
+  width: 100%;
+  display:block; margin :3px;
+  }
+  
+  .box{width:96%;
+  height:300px;
+  margin: 0 37px 97px 7px;
+  background-color:red;
+  }
+  
+  .box p{
+  font-size:13px;
+  top: 97%;}
+  
+/*  */
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 600px) {
+    .navbar.responsive {position: relative;}
+    .navbar{display: none;}
+    .menu.responsive a.icon {
+      position: relative;
+      right: 0;
+      top: 0;
+      display: block;
+     
+    }
+    .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: center;
+    }
+    .icon,i{
+        display: none;
+        align-items: center;
+        text-align: right;
+    }
+  }
+}
