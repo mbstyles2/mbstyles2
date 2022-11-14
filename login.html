@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="/bootstrap-5.2.0-beta1-dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>MB ZXeca - Login/Signup</title>
+    <link rel="shortcut icon" href="/pics/3732524.webp" type="image/x-icon">
+</head>
+
+<style>
+body{background-image: linear-gradient(lavender,teal)!important;}}
+  *  {box-sizing: border-box}
+
+/* style the container */
+.container {
+  position: relative;
+  border-radius: 5px;
+  background-color:black;
+  padding: 20px;
+  text-align:center;
+} 
+
+/* style inputs and link buttons */
+input,
+.btn {
+  width: 50%;
+  padding: 12px;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none; /* remove underline from anchors */
+}
+
+.google-btn{
+  width: 30%;
+  background-color: red;
+  padding: 2px;
+}
+
+.fb-btn{
+  width: 30%;
+  background: #3B5998;
+   
+  padding: 2px;
+}
+
+
+
+.twitter-btn{
+  width: 30%;
+  background: #55ACEE;
+  padding: 2px;
+}
+
+button a{
+  text-decoration: none;
+  color: white;
+}
+
+.sub{
+  background-color: green;
+  color: aliceblue;
+}
+
+.col-v{
+  padding: 10px;
+  margin: 10px;
+}
+
+#message{
+ 
+  display: none;
+  position: relative;
+}
+
+.col{
+  padding: 30px;
+}
+
+</style>
+
+<body>
+    <div class="main">
+        <nav class="navbar" id="myNavbar">
+            <img src = "/images/gmb.png" width="150" height="70">
+            <div class="menu">
+                
+              <div class="offcanvas offcanvas-start" id="demo">
+                <div class="offcanvas-header">
+                  <h1 class="offcanvas-title">Home of Great Games</h1>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <p style="color: red;">Anime</p>
+                  <p style="color: red;">PlayStation</p>
+                  <p style="color: red;">Nintendo Switch</p>
+                  <p style="color: red;">Xbox</p>
+                  
+                  <!-- <img src="/images/nar.jpg" width="400" height="400"> -->
+                  <button class="btn btn-secondary" type="button"><a href=login.html>Signup</a></button>
+                </div>
+              </div>
+              
+              <!-- Button to open the offcanvas sidebar -->
+              <button class="btn btn-default" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                <a style="color: white;">Home<i class = "fa fa-home"></i></a>
+              </button>
+        <a href="#">Reviews<i class = "fa fa-file"></i></a>
+        <a href="blg.html"> Blog<i class="fa fa-folder"></i></a>
+        <a href="login.html">Services<i class = "fa fa-wrench"></i></a>
+                <i class="fa fa-search"></i>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>                      
+                </div>
+
+           
+        </nav>
+
+
+
+<main>
+    <div class="container">
+        
+        <h2 style="text-align:center; color: antiquewhite; font-family: 'Courier New', Courier, monospace;">Login with Social Media</h2>
+   
+        <div class="col">
+          <button class="fb-btn"> 
+            <a href="#"><i class="fa fa-facebook "></i> Login with Facebook</a></button>
+            
+            <button class="twitter-btn"> 
+              <a href="#"><i class="fa fa-twitter "></i> Login with Twitter</a></button>
+
+              <button class="google-btn"> 
+                <a href="#"><i class="fa fa-google "></i> Login with Gmail</a></button>
+          
+        
+        
+     
+        </div>
+       
+    
+    
+       
+        <p>Or sign in manually:</p>
+       
+    
+       <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" id="password"  required>
+        
+       
+        <div class="col-v">
+          <p id="message">Password is <span id ="strength"></span></p>
+          <input type="submit" value="Login" class="sub">
+        </div>
+        
+        
+    
+
+
+
+              
+       <div class="bottom-container">
+        <a href="#" style="color:black" class="btn">Sign up</a>
+        <a href="#" style="color:black" class="btn">Forgot password? Reset it</a>
+        </div>
+
+      </div>    
+   
+           
+    </main>
+
+        <script>
+    
+            var pass = document.getElementById('password')
+            var msg = document.getElementById('message')
+            var str = document.getElementById('strength')
+            
+            pass.addEventListener('input', () =>{
+            if (pass.value.length > 0){
+            msg.style.display = "block";
+                
+            }else{
+                msg.style.display = "none";		
+    
+            }
+            
+        
+    
+        if(pass.value.length < 4){
+            str.innerHTML="weak";
+            pass.style.borderColor = "red";
+            msg.style.color="red";
+        }
+    
+        else if (pass.value.length >= 4 && pass.value.length < 8){
+            str.innerHTML= "medium";
+            pass.style.borderColor="yellow";
+            msg.style.color="yellow";
+        
+    
+        
+        }
+    
+        else if (pass.value.length > 8){
+            str.innerHTML= "complete";
+            pass.style.borderColor="green";
+            msg.style.color="green";
+            
+        
+    
+        
+        }
+        })
+    
+        </script>
+       
+   
